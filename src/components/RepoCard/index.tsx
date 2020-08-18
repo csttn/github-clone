@@ -31,7 +31,6 @@ const RepoCard: React.FC<Props> = ({
         <header>
           <RepoIcon />
           <Link to={`/${username}/${reponame}`}>{reponame}</Link>
-
         </header>
         <p>{description}</p>
       </TopSide>
@@ -43,8 +42,8 @@ const RepoCard: React.FC<Props> = ({
             <span>{language}</span>
           </li>
           <li>
-            <StarIcon />
-            <span>{stars}</span>
+            <StarIcon />          
+             <span>{stars}</span>
           </li>
           <li>
             <ForkIcon />
