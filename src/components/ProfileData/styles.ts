@@ -1,6 +1,6 @@
 import styled, { css } from 'styled-components';
 
-import { RiGroupLine, RiBuilding4Line, RiMap2Line, RiMailLine, RiLinksLine } from 'react-icons/ri'
+import { RiGroupLine, RiBuilding4Line, RiMapPinLine, RiMailLine, RiLinksLine } from 'react-icons/ri'
 
 export const Container = styled.div`
   
@@ -21,7 +21,7 @@ align-items: center;
      line-height: 1.25px;
      color: var(--gray-dark);
      font-weight: 600;
-     margin-bottom: 10px;
+     margin: 10px 0 10px 0;
 
     @media (min-width: 768px) {
       margin-top: 10px;
@@ -32,6 +32,7 @@ align-items: center;
      font-size: 20px;
      color: var(--username);
      font-weight: 300;
+     margin-top: 15px;
    }
   }
 
@@ -108,11 +109,12 @@ width: 16px;
 height: 16px;
 fill: var(--icon);
 flex-shrink: 0;
+margin-right: 5px;
 `
 
 export const CompanyIcon = styled(RiBuilding4Line)`${IconCSS}`;
 
-export const LocationIcon = styled(RiMap2Line)`${IconCSS}`;
+export const LocationIcon = styled(RiMapPinLine)`${IconCSS}`;
 
 export const EmailIcon = styled(RiMailLine)`${IconCSS}`;
 
