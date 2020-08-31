@@ -14,14 +14,12 @@ import {
 
 import { APIRepo } from '../../@types';
 
-
 interface Data {
   repo?: APIRepo;
   error?: string;
 }
 
 const Repo: React.FC = () => {
-
   const { username, reponame } = useParams();
   const [data, setData] = useState<Data>();
 
@@ -44,9 +42,6 @@ const Repo: React.FC = () => {
   if (!data?.repo) {
     return <h1>Loading...</h1>;
   }
-
-
-
 
   return (
     <Container>
@@ -84,7 +79,7 @@ const Repo: React.FC = () => {
         <span>View on GitHub</span>
       </LinkButton>
     </Container>
-  )
-}
+  );
+};
 
 export default Repo;

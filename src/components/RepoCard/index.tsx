@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom'
 
 import { Container, TopSide, RepoIcon, BotSide, StarIcon, ForkIcon } from './styles';
@@ -24,6 +24,9 @@ const RepoCard: React.FC<Props> = ({
 }) => {
   const languageClass = language ? language.toLowerCase() : 'other'
 
+
+
+
   return (
 
     <Container >
@@ -42,8 +45,8 @@ const RepoCard: React.FC<Props> = ({
             <span>{language}</span>
           </li>
           <li>
-            <StarIcon />          
-             <span>{stars}</span>
+            <StarIcon />
+            <span>{stars}</span>
           </li>
           <li>
             <ForkIcon />

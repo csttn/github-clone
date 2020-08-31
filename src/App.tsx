@@ -27,7 +27,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Profile />} />
           <Route path="/:username" element={<Profile />} />
-          <Route path="/:username/:repo" element={<Repo />} />
+          <Route path="/:username/:reponame" element={<Repo />} />
         </Routes>
         <Footer />
         <GlobalStyle />
